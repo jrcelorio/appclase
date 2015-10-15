@@ -6,4 +6,4 @@ from recetas.models import Receta
 
 def indice(request):
    lista_recetas = Receta.objects.all()
-   return render(request, 'index.html', {'lista_recetas': lista_recetas })
+   return render(request, 'recetas/index.html', {'lista_recetas': lista_recetas })
